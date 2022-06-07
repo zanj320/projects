@@ -1,0 +1,645 @@
+body {
+	background-color: #f5f5f0 !important;
+}
+
+::selection {
+	background: #b3b3b3;
+}
+
+/* ---------------header--------------- */
+.header_1 {
+	position: relative;
+	background-color: #1ac6ff;
+	height: 80px;
+	width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	border-radius: 10px;
+	box-shadow: 0 0 4px 0 #4d4dff;
+}
+
+.prvi_1 {
+	float: right;
+	margin-right: 28px;
+	margin-top: 22px;
+}
+
+.prvi_2 {
+	float: right;
+	margin-right: 130px;
+	margin-top: 22px;
+}
+
+.prvi_3 {
+	float: left;
+	margin-left: 20px;
+	margin-top: 6px;
+}
+
+.uporabnik {
+	color: black;
+	font-weight: bold;
+}
+
+.uporabnik:hover {
+	color: blue;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* ---------------section--------------- */
+.section_1 {
+	position: relative;
+	background-color: #1ac6ff;
+	width: 1400px;
+	min-height: 855px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 0 0 4px 0 #4d4dff;
+}
+
+.drugi_1 {
+	background-color: #1a88ff;
+	width: 240px;
+	float: left;
+	height: 845px;
+	border-radius: 10px;
+	overflow: hidden;
+	z-index: 1;
+	box-shadow: 0 0 4px 0 #1a88ff;
+}
+
+.drugi_2_prva_stran {
+	text-align: left;
+	width: 866px;
+	min-height: 390px;
+	display: inline-block;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.drugi_2 {
+	background-color: #1a88ff;
+	width: 866px;
+	min-height: 390px;
+	display: inline-block;
+	border-radius: 10px;
+	overflow: hidden;
+	padding-right: 10px;
+	box-shadow: 0 0 4px 0 #1a88ff;
+}
+
+.drugi_3 {
+	width: 240px;
+	float: right;
+	height: 845px;
+	border-radius: 10px;
+	box-shadow: 0 0 4px 0 black;
+}
+
+/* ---------------footer--------------- */
+footer {
+	position: relative;
+	background-color: #1ac6ff;
+	width: 1400px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	box-shadow: 0 0 4px 0 #4d4dff;
+}
+
+.tretji_1 {
+	padding: 5px;
+	font-size: 13px;
+	display: inline-block;
+}
+
+.tretji_2 {
+	padding: 5px;
+	float: right;
+}
+
+/* ---------------login--------------- */
+.box {
+	display: inline-block;
+	padding: 20px;
+	border-radius: 20px;
+}
+
+.dropdown {
+	float: right;
+	margin-right: 28px;
+	margin-top: 18px;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #cccccc;
+	min-width: 220px;
+	padding: 12px 16px;
+	z-index: 1;
+	right: 0px;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+	border-radius: 5px;
+	box-shadow: 0 0 4px 0 grey;
+}
+
+.p_prvi_1 {
+	float: right;
+	margin-right: 17px;
+	margin-top: 22px;
+}
+
+.p_prvi_2 {
+	float: right;
+	margin-right: 102px;
+	margin-top: 22px;
+}
+
+/* ---------------zacetna--------------- */
+.z_prvi_2 {
+	float: right;
+	margin-right: 105px;
+	margin-top: 22px;
+}
+
+/* ---------------isci prijavljeno oglas--------------- */
+.ip_ogrodje_oglasa {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	font-size: 18px;
+	width: 800px;
+	height: 220px;
+	background-color: #cccccc;
+	border-radius: 10px;
+	position: relative;
+	box-shadow: 0 0 4px 0 #cccccc;
+}
+
+.ip_ogrodje_oglasa:hover {
+	background-color: #bfbfbf;
+}
+
+.ip_noter_1 {
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	height: 170px;
+	width: 170px;
+	border-radius: 10px;
+}
+
+.ip_noter_2 {
+	margin-top: 10px;
+	background-color: darkgrey;
+	display: inline-block;
+	width: 600px;
+	text-align: left;
+	padding-left: 5px;
+	border-radius: 10px;
+	box-shadow: 0 0 3px 0 darkgrey;
+}
+
+.ip_noter_3 {
+	margin-top: 10px;
+	background-color: darkgrey;
+	display: inline-block;
+	width: 600px;
+	text-align: left;
+	padding-left: 5px;
+	border-radius: 10px;
+	box-shadow: 0 0 3px 0 darkgrey
+}
+
+.ip_noter_4 {
+	margin-top: 10px;
+	background-color: darkgrey;
+	display: inline-block;
+	width: 600px;
+	height: 120px;
+	text-align: left;
+	padding-left: 5px;
+	border-radius: 10px;
+	word-wrap: break-word;
+	box-shadow: 0 0 3px 0 darkgrey;
+}
+
+.ip_noter_5 {
+	float: left;
+	width: 170px;
+	margin-left: 10px;
+	margin-top: -20px;
+	padding-left: 5px;
+	font-size: 15px;
+}
+
+.ip_navigacija_1 {
+	width: 865px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 35px;
+	border-bottom: 1px solid black;
+	border-bottom-style: dashed;
+	text-align: left;
+}
+
+.navigacija_ogrodje {
+	display: inline-block;
+	width: 792px;
+	text-align: left;
+}
+
+.ip_navigacija_1_noter_1 {
+	display: inline-block;
+	font-weight: bold;
+}
+
+.ip_navigacija_1_noter_2 {
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.ip_navigacija_2 {
+	width: 865px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	border-top: 1px solid black;
+	border-top-style: dashed;
+	display: inline-block;
+}
+
+.ip_navigacija_1_napacno {
+	width: 866px;
+	padding-top: 135px;
+	font-size: 30px;
+	height: 390px;
+	font-weight: bold;
+	display: inline-block;
+	word-wrap: break-word;
+	color: black
+}
+
+/* ---------------račun--------------- */
+.section_uporabnik {
+	position: relative;
+	background-color: #1ac6ff;
+	width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	padding-bottom: 0px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	padding-bottom: 5px;
+	box-shadow: 0 0 4px 0 #4d4dff;
+}
+
+
+/* ---------------ogled oglasov--------------- */
+.naziv_oglasa {
+	color: black;
+}
+
+.naziv_oglasa:hover {
+	color: #e6e6e6;
+	text-decoration: none;
+}
+
+/* ---------------isci zacetna oglas--------------- */
+.section_3 {
+	position: relative;
+	background-color: #1ac6ff;
+	width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding: 5px;
+	padding-bottom: 0px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	box-shadow: 0 0 4px 0 #4d4dff;
+}
+
+/* ---------------kategorije--------------- */
+.kategorije_a {
+	margin-bottom: 15px;
+	height: 140px;
+	width: 150px;
+	background-color: #ff4d4d;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 7px;
+	box-shadow: 0 0 8px 0 #ff4d4d;
+}
+
+.kategorije_a:hover {
+	background-color: #ff3333;
+	box-shadow: 0 0 10px 0 #ff3333;
+}
+
+/* ---------------oglas--------------- */
+.section_oglas {
+	position: relative;
+	background-color: #1ac6ff;
+	width: 1400px;
+	min-height: 200px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	border-radius: 10px;
+	box-shadow: 0 0 4px 0 #4d4dff;
+}
+
+.oglas_noter_1 {
+	min-height: 560px;
+	padding: 5px;
+	display: inline-block;
+	border-radius: 10px;
+	text-align: center;
+	background-color: #1a88ff;
+	box-shadow: 0 0 4px 0 #1a88ff;
+}
+
+.oglas_noter_2 {
+	width: 500px;
+	float: right;
+	margin-right: 361px;
+	padding-left: 5px;
+	border-radius: 10px;
+	font-weight: bold;
+	background-color: #1a88ff;
+	box-shadow: 0 0 4px 0 #1a88ff;
+	color: black;
+}
+
+.oglas_noter_3 {
+	width: 500px;
+	float: right;
+	margin-right: 361px;
+	margin-top: -530px;
+	padding-left: 5px;
+	border-radius: 10px;
+	font-weight: bold;
+	background-color: #1a88ff;
+	box-shadow: 0 0 4px 0 #1a88ff;
+	color: black;
+}
+
+.oglas_noter_4 {
+	width: 500px;
+	float: right;
+	margin-right: 361px;
+	margin-top: -498px;
+	padding-left: 5px;
+	border-radius: 10px;
+	font-weight: bold;
+	text-transform: capitalize;
+	background-color: #1a88ff;
+	box-shadow: 0 0 4px 0 #1a88ff;
+	color: black;
+}
+
+.oglas_noter_5 {
+	width: 500px;
+	float: right;
+	margin-right: 361px;
+	margin-top: -466px;
+	padding-left: 5px;
+	border-radius: 10px;
+	font-weight: bold;
+	background-color: #1a88ff;
+	box-shadow: 0 0 4px 0 #1a88ff;
+	color: black;
+}
+
+.oglas_noter_6 {
+	width: 500px;
+	float: right;
+	margin-right: 361px;
+	margin-top: -434px;
+	padding-left: 5px;
+	border-radius: 10px;
+	font-weight: bold;
+	background-color: #1a88ff;
+	box-shadow: 0 0 4px 0 #1a88ff;
+	color: black;
+}
+
+.oglas_noter_7 {
+	width: 500px;
+	height: 402px;
+	resize: none;
+	float: right;
+	margin-right: 361px;
+	margin-top: -402px;
+	padding-left: 5px;
+	border-radius: 10px;
+	word-wrap: break-word;
+	color: black;
+	background-color: #1a88ff;
+	border: none;
+	box-shadow: 0 0 4px 0 #1a88ff;
+}
+
+.oglas_noter_8 {
+	width: 351px;
+	height: 560px;
+	float: right;
+	margin-top: -560px;
+	padding-left: 5px;
+	border-radius: 10px;
+	text-align: center;
+	background-color: #1a88ff;
+	box-shadow: 0 0 4px 0 #1a88ff;
+	color: black;
+}
+
+.stevilo_oglasov {
+	background-color: #1a88ff;
+	border-radius: 10px;
+	width: 270px;
+	height: 355px;
+	text-align: center;
+	display: inline-block;
+	margin-left: 14px;
+	margin-top: 14px;
+	padding: 5px;
+	box-shadow: 0 0 4px 0 #1a88ff;
+}
+
+.stevilo_oglasov:hover {
+	background-color: #007bff;
+}
+
+/* textarea::-webkit-scrollbar {
+	width: 0px;
+} */
+
+textarea::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+	
+textarea::-webkit-scrollbar-button:start:decrement,
+textarea::-webkit-scrollbar-button:end:increment  {
+	height: 10px;
+	background-color: transparent;
+}
+
+textarea::-webkit-scrollbar-track-piece  {
+	background-color: #eeeeee;
+	-webkit-border-radius: 16px;
+}
+
+textarea::-webkit-scrollbar-thumb:vertical {
+	height: 10px;
+	background-color: #666;
+	border: 1px solid #eee;
+	-webkit-border-radius: 16px;
+}
+
+textarea::-webkit-resizer {
+	display: none;
+	margin-top: -20px;
+}
+
+/* ---------------objavi oglas--------------- */
+.celotna {
+	display: none;
+	text-align: center;
+	margin-right: 90px;
+	height: 641px;
+	width: 600px;
+	float: right;
+	text-align: center;
+	padding: 5px;
+}
+
+/* ---------------oceni uporabnika--------------- */
+.rate {
+	float: left;
+	height: 46px;
+	padding: 0 10px;
+	margin-left: 87px;
+}
+.rate:not(:checked) > input {
+	position: absolute;
+	visibility: hidden;
+}
+.rate:not(:checked) > label {
+	float: right;
+	width: 1em;
+	overflow: hidden;
+	white-space: nowrap;
+	cursor: pointer;
+	font-size: 30px;
+	color: black;
+}
+.rate:not(:checked) > label:before {
+	content: '★ ';
+}
+.rate > input:checked ~ label {
+	color: yellow;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+	color: yellow;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+	color: yellow;
+}
+
+/* ---------------popup windovi--------------- */
+.div-forma {
+	display: none;
+	background-color: black;
+	position: fixed;
+	top: 0;
+	background-color: rgba(0,0,0,0.55);
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.box_register {
+	display: inline-block;
+	padding: 20px;
+	border-radius: 20px;
+	background-color: #1ac6ff;
+	width: 420px;
+	margin-top: 15px;
+}
+
+.box_login {
+	display: inline-block;
+	padding: 20px;
+	border-radius: 20px;
+	background-color: #1ac6ff;
+	width: 420px;
+	margin-top: 15px;
+}
+
+.box_pozabljenogeslo {
+	display: none;
+	padding: 20px;
+	border-radius: 20px;
+	background-color: #1ac6ff;
+	width: 420px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.box_izbrisi {
+	display: inline-block;
+	padding: 20px;
+	border-radius: 20px;
+	background-color: #1ac6ff;
+	margin-top: 15px;
+}
+
+#potrdi_filter {
+	background-color: white;
+	border-radius: 5px;
+	border: none;
+	outline: 0px;
+	padding: 3px 8px 3px 8px;
+}
+
+#potrdi_filter:hover {
+	background-color: lightgrey;
+}
+
+.filtri {
+	border-radius: 5px;
+	border: none;
+	outline: 0px;
+	padding: 3px;
+}
+
+.napis_nic_oglasov {
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 160px;
+	margin-left: 185px;
+}
