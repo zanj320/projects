@@ -1,0 +1,43 @@
+canvas {
+	margin: auto;
+	display: block;
+/*	border: solid black 2px;*/
+}
+
+.div_prvi {
+	text-align: center;
+	margin: auto;
+	margin-top: 250px;
+	float: left;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 18px;
+	display: inline-block;
+	border: solid black 2px;
+	position: sticky;
+	background-color: rgb(253,59,59);
+}
+
+.div_drugi {
+	text-align: center;
+	margin: auto;
+	margin-top: 250px;
+	float: right;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 18px;
+	display: inline-block;
+	border: solid black 2px;
+	position: sticky;
+	background-color: rgb(48,109,252);
+}
+
+table, td {
+	border: solid black 2px;
+	border-collapse: collapse;
+	/*margin-left: auto;
+	margin-right: auto;*/
+	margin-top: 20px;
+	padding: 5px;
+	width: 400px;
+}

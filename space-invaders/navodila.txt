@@ -1,0 +1,9 @@
+Vaše naloge:
+
+- Dodajte nasprotnike --
+- Zaznavanje dotika (collision detection) --
+- Nadgradnja metkov
+- Polepšajte animacije premikanja --
+- Podpora za več igralcevc --
+- Nastavitve za spreminjanje tipk igralca
+- Nadgradnja po lastni izbiri --
