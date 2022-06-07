@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<style>
+   body {
+      background-color: #6694ff !important;
+   }
+</style>
+<head>
+   <title>Aplikacija za urejanje slike</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<meta charset="UTF-8">
+</head>
+<body>
+   <div style="margin-top: 30px; border-radius: 10px; display: inline-block; padding: 10px; margin-left: 20px; width: 650px; min-height: 400px; text-align: center; background-color: #3c72f0;">
+      <h1 style="font-size: 40px;">Izberi filter</h1>
+      <div style="text-align: center; margin-top: 25px;">
+         <button onclick="Posivinji()" class="btn btn-dark">POSIVINJI</button><br/><br/>
+
+         <button onclick="OdstraniBarvo('red')" class="btn btn-dark">ODSTRANI RDEČO</button>
+         <button onclick="OdstraniBarvo('green')" class="btn btn-dark">ODSTRANI ZELENO</button>
+         <button onclick="OdstraniBarvo('blue')" class="btn btn-dark">ODSTRANI MODRO</button><br/><br/>
+
+         <button onclick="PoudariBarvo('red')" class="btn btn-dark">POUDARI RDEČO</button>
+         <button onclick="PoudariBarvo('green')" class="btn btn-dark">POUDARI ZELENO</button>
+         <button onclick="PoudariBarvo('blue')" class="btn btn-dark">POUDARI MODRO</button><br/><br/>
+
+         <button onclick="Svetlost()" class="btn btn-dark">NASTAVI SVETLOST: </button><input type="range" id="svetlost1" class="form-control" value="0" min="0" max="1500"><br/>
+         <button onclick="ThresholdNavadna()" class="btn btn-dark">NASTAVI NAVADEN TRESHOLD </button><br/><br/>
+         <button onclick="ThresholdPoljubna()" class="btn btn-dark">NASTAVI POLJUBEN TRESHOLD: </button><input type="range" id="treshold1" class="form-control" value="0" min="0" max="260"><br/>
+
+         <button onclick="NajdiRoboveLaplac()" class="btn btn-dark">NAJDI ROBOVE (laplac)</button><br/><br/>
+         <button onclick="NajdiRoboveSobelV()" class="btn btn-dark">NAJDI ROBOVE (sobel-vertikala)</button>
+         <button onclick="NajdiRoboveSobelH()" class="btn btn-dark">NAJDI ROBOVE (sobel-horizontala)</button><br/><br/>
+
+         <button onclick="Blurr()" class="btn btn-dark">BLURR</button>
+         <button onclick="Sharpen()" class="btn btn-dark">SHARPEN</button>
+         <button onclick="BoxFilter()" class="btn btn-dark">BOX FILTER</button><br/><br/>
+
+         <button onclick="Sosed()" class="btn btn-dark">METODA NAJBLIŽJEGA SOSEDA</button>
+         <button onclick="Bilinearno()" class="btn btn-dark">BILINEARNO</button>
+      </div>
+   </div>
+   <div style="margin-top: 30px; border-radius: 10px; display: inline-block; text-align: center; margin-right: 20px; float: right; padding: 10px; width: 850px; background-color: #3c72f0;">
+      <div>
+         <h1 style="font-size: 40px;">Izberi sliko</h1>
+      </div>
+      <div style="margin-top: 25px;">
+         <button onclick="LoadImage()" class="btn btn-dark">NALOŽI SLIKO</button>
+         <button onclick="Razveljavi()" class="btn btn-dark">RAZVELJAVI ZADNJO SPREMEMBO</button>
+         <button onclick="Zdruzi()" class="btn btn-dark">ZDRUŽI</button>
+      </div>
+      <div style="margin-top: 25px;">
+         <canvas></canvas>
+      </div>
+   </div>
+   <script src="index.js"></script>
+</body>
+</html>
+
+<!--
+- Sivenje slike (grayscale) =
+- Določanje praga (tresholding) =
+- Odstranjevanje barvnih kanalov (barvni kanal postavi na 0) =
+- Poudarjanje barvnih kanalov (posamezni barvni kanal povečuj za poljubno vrednost) =
+- Spreminjanje svetlosti slike (gamma korekcija) =
+- Iskanje robov (laplacov operator) =
+- sobel operator (horizontalno in vertikalno) =
+- Povečevanje slike z metodo najbližjega soseda (prepiši vrednost piksla na novo ustvarjene piksle) =
+- Povečevanje slike z bilinearno interpolacijo (za postopek glej zvezek ali https://en.wikipedia.org/wiki/Bilinear_interpolation)
+- Odstranjevanje visokih fekvenc (box filter) =
+- Odstranjevanje visokih frekvenc (gaussian blur) =
+- Funkcija za ostrenje robov (unsharp masking) =
+- Združevanje dveh slik (seštevanje istoležečih pikslov, vsak 50% prosojen) =
+- Možnost razveljavitve zadnje spremembe =
+- Spreminjanje le označenega dela slike
+-->
