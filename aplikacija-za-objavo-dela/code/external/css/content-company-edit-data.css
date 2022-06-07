@@ -1,0 +1,86 @@
+body {
+	text-align: center !important;
+	background-color: #f2f2f2 !important;
+}
+
+.name-of-input {
+	text-align: left !important;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.form {
+	margin-top: 1% !important;
+	display: inline-block;
+	width: 50%;
+	padding: 10px;
+}
+
+.search-input {
+	margin: 0px 0px 20px 0px !important;
+	width: 100% !important;
+}
+
+.button-input {
+	padding: 7px 30px 7px 30px !important;
+	margin: 0px 0px 10px 0px !important;
+	width: 100%;
+	font-weight: bold !important;
+}
+
+.span-login {
+	font-weight: bold;
+}
+
+@media screen and (max-width: 730px) {
+	.span-login {
+		font-size: 30px;
+	}
+}
+
+@media screen and (min-width: 730px) {
+	.span-login {
+		font-size: 45px;
+	}
+}
+
+.search-input-date {
+	width: 100% !important;
+}
+
+.podjetje-lastnik {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.confirm-buttons {
+	display: grid;
+	grid-template-columns: 47% 6% 47%;
+	grid-template-areas: 
+	'button div button'
+}
+
+.elements {
+	margin-top: 20px;
+}
+
+@media screen and (min-width: 1040px) {
+	.form-split {
+		display: grid;
+		grid-template-columns:49% 2% 49%;
+		grid-template-areas: 
+			'div div div'
+			'.password div .password_confirm';
+	}
+}
+
+@media screen and (max-width: 1040px) {
+	.form-split {
+		display: grid;
+		grid-template-columns:100%;
+		grid-template-areas: 
+			'div'
+			'div'
+			'.password_confirm';
+	}
+}

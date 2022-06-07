@@ -1,0 +1,83 @@
+body {
+	text-align: center !important;
+	background-color: #f2f2f2 !important;
+	
+	display: grid;
+	grid-template-columns:25% 50% 25%;
+	grid-template-areas: 
+		'div div div';
+}
+
+.name-of-input {
+	text-align: left !important;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.name-of-input span {
+	font-weight: normal;
+}
+
+.form {
+	margin-top: 1% !important;
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.textarea-for-request {
+	height: 350px !important;
+	width: 100% !important;
+	margin: 0px 0px 15px 0px;
+}
+
+.search-input {
+	margin: 0px 0px 20px 0px !important;
+	width: 100% !important;
+}
+
+.works {
+	margin-top: 20px;
+}
+
+.form-delete {
+	float: left;
+	margin: 0px 0px 0px 10px;
+}
+
+hr {
+	background-color: #818181;
+}
+
+.button-input {
+	padding: 7px 30px 7px 30px !important;
+	margin: 0px 0px 10px 0px !important;
+	width: 100%;
+	font-weight: bold !important;
+}
+
+.span-login {
+	font-weight: bold;
+	text-align: left;
+}
+
+.req {
+	float: left;
+	margin-top: 8px;
+}
+
+.form-split {
+	margin: 20px 0px 0px 0px;
+}
+
+@media screen and (max-width: 550px) {
+	.span-login {
+		font-size: 30px;
+	}
+}
+
+@media screen and (min-width: 550px) {
+	.span-login {
+		font-size: 45px;
+	}
+}

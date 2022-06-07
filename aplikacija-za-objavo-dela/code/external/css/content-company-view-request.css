@@ -1,0 +1,75 @@
+.work {
+	margin: 0px 10px 20px 0px;
+	border-radius: 5px;
+	font-size: 20px;
+	text-align: justify;
+	background-color: #59ffe2;
+	padding: 15px;
+}
+
+body {
+	text-align: center !important;
+	background-color: #f2f2f2 !important;
+}
+
+.name-of-input {
+	text-align: left !important;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.form {
+	margin-top: 1% !important;
+	display: inline-block;
+	width: 60%;
+	padding: 10px;
+}
+
+.search-input {
+	margin: 0px 0px 20px 0px !important;
+	width: 100% !important;
+}
+
+.button-input {
+	padding: 7px 30px 7px 30px !important;
+	margin: 0px 0px 10px 0px !important;
+	width: 100%;
+	font-weight: bold !important;
+}
+
+.span-login {
+	font-weight: bold;
+}
+
+@media screen and (max-width: 730px) {
+	.span-login {
+		font-size: 30px;
+	}
+}
+
+@media screen and (min-width: 730px) {
+	.span-login {
+		font-size: 45px;
+	}
+}
+
+.confirm-buttons {
+	margin: 0 auto;
+	width: 70%;
+	display: grid;
+	grid-template-columns: 47% 6% 47%;
+	grid-template-areas: 
+	'button div button'
+}
+
+.textarea-for-request {
+	height: 350px !important;
+	width: 100% !important;
+	margin: 10px 0px 15px 0px;
+	resize: none;
+}
+
+.request-data {
+	display: block;
+	text-align: left !important;
+}
