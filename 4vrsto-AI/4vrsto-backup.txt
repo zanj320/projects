@@ -1,0 +1,258 @@
+using System;
+
+namespace _4vrsto {
+    class Igralec {
+        private int y, x;
+        private char[,] polje;
+
+        Igralec(int y, int x) {
+            this.y = y;
+            this.x = x;
+
+            this.polje = new char[this.y, this.x];
+
+            for (int i = 0; i < this.y; i++) {
+                for (int j = 0; j < this.x; j++) {
+                    this.polje[i, j] = '-';
+                }
+            }
+
+            /*vnos(3, 'O');
+            vnos(4, 'O');
+            vnos(5, 'O');
+            vnos(4, 'O');
+            vnos(5, 'O');
+            vnos(5, 'O');
+
+            vnos(2, 'O');
+            vnos(3, 'O');
+            vnos(4, 'O');
+            vnos(5, 'O');
+            vnos(2, 'O');
+            vnos(3, 'O');
+            vnos(4, 'O');
+            vnos(5, 'O');*/
+        }
+
+        private void izbirnaVrstica() {
+            for (int i = 1; i <= x; i++) {
+                Console.Write(i);
+                if (i + 1 != x + 1)
+                    Console.Write(" ");
+            }
+
+            Console.WriteLine();
+
+            for (int i = 1; i <= x; i++) {
+                Console.Write("v");
+                if (i + 1 != x + 1)
+                    Console.Write(" ");
+            }
+            Console.WriteLine();
+        }
+        private void izpisi(char[,] podanoPolje) {
+            izbirnaVrstica();
+            
+            for (int i = 0; i < podanoPolje.GetLength(0); i++) {
+                for (int j = 0; j < podanoPolje.GetLength(1); j++) {
+                    Console.Write(podanoPolje[i, j]);
+                    if (j + 1 != podanoPolje.GetLength(1))
+                        Console.Write(" ");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+        }
+
+        private void igralec() {
+            string izbiraStr;
+            int izbira;
+
+            Console.WriteLine("Zacni, izbiraj med 1 in " + x);
+            izpisi(polje);
+
+            while (true) {
+                do {
+                    izbiraStr = Console.ReadLine();
+                    if (!int.TryParse(izbiraStr, out izbira)) { }
+                    else
+                        izbira = Int32.Parse(izbiraStr);
+                    
+                } while (izbira > x || izbira < 0 || !int.TryParse(izbiraStr, out izbira));
+
+                vnos(izbira, 'X');
+                izpisi(polje);
+
+                if (zmaga('X')) {
+                    Console.WriteLine("Zmagal!");
+                    break;
+                }
+            }
+        }
+        void vnos(int izbira, char znak) {
+            bool naVoljo = false;
+            
+            for (int i = 0; i < polje.GetLength(0); i++) {
+                if (polje[i, izbira-1] == '-') {
+                    naVoljo = true;
+                    break;
+                }
+            }
+
+            if (naVoljo) {
+                int preji = 0;
+
+                char[,] prejPolje = (char[,])polje.Clone();
+                int kamy = 0, kamx = 0;
+
+                for (int i = 0; i < polje.GetLength(0); i++) {
+                    if (polje[i, izbira - 1] != '-') {
+                        polje[preji, izbira - 1] = znak;
+                        kamy = preji;
+                        kamx = izbira - 1;
+                        break;
+                    } else if (i + 1 == polje.GetLength(0)) {
+                        polje[i, izbira - 1] = znak;
+                        kamy = i;
+                        kamx = izbira - 1;
+                        break;
+                    }
+
+
+                    preji = i;
+                    //racunalnik(kamx, kamy, prejPolje);
+                }
+            } else
+                Console.WriteLine("Poln stolpec!");
+        }
+
+        bool zmaga(char znak) {
+            //gleda po horizontalah
+            int stX;
+            for (int i = 0; i < y; i++) {
+                stX = 0;
+
+                for (int j = 0; j < x; j++) {
+                    if (polje[i, j] == znak)
+                        stX++;
+                    else if (stX != 0)
+                        stX = 0;
+
+                    if (stX >= 4)
+                        return true;
+                }
+            }
+
+            //gleda po vertikalah
+            for (int i = 0; i < x; i++) {
+                stX = 0;
+
+                for (int j = 0; j < y; j++) {
+                    if (polje[j, i] == znak)
+                        stX++;
+                    else if (stX != 0)
+                        stX = 0;
+
+                    if (stX >= 4)
+                        return true;
+                }
+            }
+
+            //gleda po diagonalah /
+            for (int i = 3; i < polje.GetLength(1) - 1; i++) {
+                stX = 0;
+
+                for (int j = 0, k = i; k >= 0 && j < polje.GetLength(0); j++, k--) {
+                    if (polje[j, k] == znak)
+                        stX++;
+                    else if (stX != 0)
+                        stX = 0;
+
+                    if (stX >= 4)
+                        return true;
+                }
+            }
+            
+            for (int l = 0; l < polje.GetLength(0) - 3; l++) {
+                stX = 0;
+
+                for (int j = l, k = polje.GetLength(1) - 1; k >= 0 && j < polje.GetLength(0); j++, k--) {
+                    if (polje[j, k] == znak)
+                        stX++;
+                    else if (stX != 0)
+                        stX = 0;
+
+                    if (stX >= 4)
+                        return true;
+                }
+                
+            }
+
+            //gleda po diagonalah \
+            for (int i = polje.GetLength(1) - 3; i > 0; i--) {
+                stX = 0;
+
+                for (int j = 0, k = i; j < polje.GetLength(0) && k < polje.GetLength(1); j++, k++) {
+                    if (polje[j, k] == znak)
+                        stX++;
+                    else if (stX != 0)
+                        stX = 0;
+
+                    if (stX >= 4)
+                        return true;
+                }
+            }
+
+            for (int l = 0; l < polje.GetLength(0) - 3; l++) {
+                stX = 0;
+
+                for (int j = l, k = 0; j < polje.GetLength(0) && k < polje.GetLength(1); j++, k++) {
+                    if (polje[j, k] == znak)
+                        stX++;
+                    else if (stX != 0)
+                        stX = 0;
+
+                    if (stX >= 4)
+                        return true;
+                }
+            }
+
+            return false;
+        }
+
+        private void racunalnik(int kamx, int kamy, char[,] prejPolje) {
+            //izpisi(prejPolje);
+            //Console.WriteLine(kamx+","+kamy);
+            /*for (int k = 1; k <= 8; k++) {
+                switch(k) {
+                    case 1:
+                        break;
+                }
+            }*/
+                        
+                        
+            //Console.WriteLine("("+i + "," + j+")");
+
+            //izpisi(prejPolje);
+        }
+
+        static void Main(string[] args) {
+            Igralec racunalnik = new Igralec(6,7);
+            racunalnik.igralec();
+
+            Console.ReadLine();
+        }
+    }
+
+
+}
+
+
+ /*|| (polje[i, j] == '-' && j > 0 && polje[i, j - 1] == znak && i < polje.GetLength(0) - 1 && polje[i + 1, j] != '-') && ((i < polje.GetLength(0) - 1 && polje[i + 1, j] != '-') || i + 1 == polje.GetLength(0))*/
+
+                        /*if (j == 0 || (j > 0 && polje[i, j - 1] == 'O'))
+                            levaStena = true;
+                        if (j + 1 == polje.GetLength(1) || (j < polje.GetLength(1) - 1 && polje[i, j + 1] == 'O'))
+                            desnaStena = true;*/
+
+if (((j > 0 &&  j < polje.GetLength(1) - 1 && polje[i, j + 1] != znak) || j == polje.GetLength(1) - 1) && ((i < polje.GetLength(0) - 1 && j < polje.GetLength(1) - 1 && polje[i + 1, j + 1] != '-' && j != polje.GetLength(1) - 1) || i == polje.GetLength(0) - 1) && !levaStena)

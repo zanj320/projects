@@ -1,0 +1,13 @@
+E:\ProjektiC#\4vrsto\bin\Debug\netcoreapp3.1\4vrsto.exe
+E:\ProjektiC#\4vrsto\bin\Debug\netcoreapp3.1\4vrsto.deps.json
+E:\ProjektiC#\4vrsto\bin\Debug\netcoreapp3.1\4vrsto.runtimeconfig.json
+E:\ProjektiC#\4vrsto\bin\Debug\netcoreapp3.1\4vrsto.runtimeconfig.dev.json
+E:\ProjektiC#\4vrsto\bin\Debug\netcoreapp3.1\4vrsto.dll
+E:\ProjektiC#\4vrsto\bin\Debug\netcoreapp3.1\4vrsto.pdb
+E:\ProjektiC#\4vrsto\obj\Debug\netcoreapp3.1\4vrsto.csproj.AssemblyReference.cache
+E:\ProjektiC#\4vrsto\obj\Debug\netcoreapp3.1\4vrsto.AssemblyInfoInputs.cache
+E:\ProjektiC#\4vrsto\obj\Debug\netcoreapp3.1\4vrsto.AssemblyInfo.cs
+E:\ProjektiC#\4vrsto\obj\Debug\netcoreapp3.1\4vrsto.csproj.CoreCompileInputs.cache
+E:\ProjektiC#\4vrsto\obj\Debug\netcoreapp3.1\4vrsto.dll
+E:\ProjektiC#\4vrsto\obj\Debug\netcoreapp3.1\4vrsto.pdb
+E:\ProjektiC#\4vrsto\obj\Debug\netcoreapp3.1\4vrsto.genruntimeconfig.cache
