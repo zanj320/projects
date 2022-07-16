@@ -1,0 +1,15 @@
+.box-image {
+    height: 320px;
+    width: 320px;
+    object-fit: cover;
+}
+
+.box-image-single {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.like-button:hover {
+    cursor: pointer;
+}

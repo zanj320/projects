@@ -1,0 +1,30 @@
+.format-button-input {
+    display: grid;
+    grid-template-columns: 85% 3% 12%;
+    grid-template-areas:
+        'input div button';
+}
+
+.send-message {
+    padding: 10px;
+}
+
+.me {
+    text-align: right;
+}
+
+.me-template {
+    display: inline;
+    color: grey;
+}
+
+.follow_button {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    text-decoration: underline;
+}
+
+.follow_button:hover {
+    color: rgb(0, 83, 207) !important;
+}
