@@ -1,3 +1,7 @@
-If private, contact me:
+BMR - web application (Book My restaurant) created on Laravel 9.x, PostgreSQL, Vue.js 2.x (Quasar)
+BACKEND: https://gitlab.com/book-my-restaurant/backend
+FRONTEND: https://gitlab.com/book-my-restaurant/frontend
+
+BMR - web application (Book My restaurant) created on Laravel 10.x, MariaDB, Vue.js 3.x (PrimeVue + TailwindCSS), docker
 BACKEND: https://gitlab.com/book-my-restaurant/backend
 FRONTEND: https://gitlab.com/book-my-restaurant/frontend
